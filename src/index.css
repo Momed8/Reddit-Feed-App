@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to right, #fe4880, #ffce00);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+header input {
+  display: inline-block;
+  color: #ffce00;
+  background-color: #fff !important;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: none;
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 15px;
+  outline: none;
+}
+
+header::before {
+  content: url("/public/reddit.svg");
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.articles article {
+  padding: 30px 15px;
+  background-color: #fff;
+}
+
+.articles article a {
+  text-decoration: none;
+}
+
+.articles article h3 {
+  color: #212121;
+}
+
+.articles article:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.articles article:hover {
+  background-image: linear-gradient(to left, #fe4880, #ffce00);
+}
